@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-color: #FAEEE0;
+    height: 100vh;
+    main {
+        form {
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            div {
+                text-align: center;
+            }
+        }
+    }
+    footer {
+        background-color: #5E454B;
+        bottom: 0;
+        position: absolute;
+        width: 100vw;
+        height: 10vh;
+    }
+}
+
+//サイドばー全ページに配置するか
+//css整理
