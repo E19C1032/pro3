@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  background-color: #FAEEE0;
+  height: 100vh;
+}
+#container main form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+#container main form div {
+  text-align: center;
+}
+#container footer {
+  background-color: #5E454B;
+  bottom: 0;
+  position: absolute;
+  width: 100vw;
+  height: 10vh;
+}/*# sourceMappingURL=postArticle.css.map */
