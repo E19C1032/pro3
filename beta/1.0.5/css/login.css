@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  position: relative;
+  background-color: #204969;
+}
+#container header {
+  padding: 3vh 5vw;
+}
+#container header a {
+  color: #fff;
+  text-decoration: none;
+}
+#container main {
+  text-align: center;
+}
+#container main a {
+  color: #fff;
+  text-decoration: none;
+}
+#container main form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+#container main form fieldset {
+  background-color: #fff;
+}/*# sourceMappingURL=login.css.map */
