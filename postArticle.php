@@ -2,7 +2,6 @@
 
 require "php/include/readIni.php";
 require "php/include/pdoConnect.php";
-require "php/include/util.php";
 
 session_start();
 
@@ -18,17 +17,16 @@ if (!$login) {
     header("Location:login.php");
 }
 
-// ユーザー情報を取得
-$sql = "SELECT * FROM user WHERE userID = " . $userID . ";";
-$result = $conn->query($sql)->fetch();
+// 作品を取得
+// wr: Work Result
+$sql = "SELECT title, titlePseudonym FROM work;";
+$wr = $conn->query($sql);
 
-// 投稿記事情報を取得
-// ar: Article Result
-$sql = "SELECT * FROM article WHERE userID = " . $userID . ";";
-$ar = $conn->query($sql)->fetchAll();
+// 下書きを取得
+// dr: Draft Result
+$sql = "SELECT * FROM draft WHERE userID = ".$userID.";";
+$dr = $conn->query($sql)->fetchAll();
 
 
 
-require "php/mypage.php";
-
-?>
+require "php/postArticle.php";
