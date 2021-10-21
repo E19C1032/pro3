@@ -1,0 +1,29 @@
+<?php
+
+require "php/include/readIni.php";
+require "php/include/pdoConnect.php";
+require "php/include/util.php";
+
+session_start();
+
+// ログインしているかどうか
+$login = false;
+if(isset($_SESSION["userID"])) {
+    $userID = $_SESSION["userID"];
+    $login = true;
+}
+
+if(!$login) {
+    header("Location:login.php");
+}
+
+// お気に入り記事のIDを取得
+// far: Favorite Article Result
+$sql = "SELECT articleID FROM favoriteArticle WHERE userID = ".$userID.";";
+$far = $conn->query($sql)->fetchAll();
+
+
+
+require "php/favoriteArticle.php";
+
+?>
