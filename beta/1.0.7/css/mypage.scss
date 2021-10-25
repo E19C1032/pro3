@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    // 左
+    #fixed-area {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 20%;
+        height: 100vh;
+        background-color: #204969;
+        header {
+            height: 100vh;
+            display: flex;
+            flex-flow: column;
+            align-items: center;
+            text-decoration: none;
+            color: #fff;
+            a {
+                color: #fff;
+                height: 15vh;
+                text-decoration: none;
+                h1 {
+                    padding: 3vh 0;
+                }
+            }
+            div {
+                height: 85vh;
+                ul {
+                    list-style-type: none;
+                    a {
+                        text-decoration: none;
+                        li {
+                            padding: 3vh 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    //　右
+    #container {
+        width: 80%;
+        background-color: #fff7f7;
+        display: flex;
+        flex-flow: column;
+        main {
+            padding-top: 5vh;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            #main-container {
+                #main-contents-container {
+                    #user-info {
+                        display: flex;
+                        margin: 5vh 0;
+                        img {
+                            margin-right: 5vw;
+                        }
+                    }
+                    #article-container {
+                        .article {
+                            background-color: #fff;
+                            display: flex;
+                            justify-content: space-around;
+                            margin: 5vh 0;
+                            a {
+                                width: 400px;
+                                height: 300px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            background-color: #5E454B;
+            bottom: 0;
+            width: 80vw;
+            height: 25vh;
+            margin-top: 10vh;
+        }
+    }
+}

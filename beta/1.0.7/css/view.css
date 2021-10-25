@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fff7f7;
+}
+body #container {
+  height: 100%;
+  background-color: #fff7f7;
+}
+body #container header {
+  background-color: #204969;
+  padding: 3vh 5vw;
+}
+body #container header a {
+  color: #fff;
+  text-decoration: none;
+}
+body #container main #main-container #container-info {
+  margin: 5vh 5vw;
+}
+body #container main #main-container #container-info img {
+  width: 300px;
+}
+body #container main #main-container #button-post-comment {
+  border: solid;
+  background-color: #fff;
+  margin: 5vh 5vw;
+}
+body #container main #main-container #post-comment-container {
+  visibility: hidden;
+  margin: 0 5vw 5vh;
+}
+body #container main #main-container #post-comment-container form #button-form-comment-cancel {
+  border: solid;
+}
+body #container main #main-container #post-comment-container form #button-form-comment-submit {
+  border: solid;
+}
+body #container main #main-container .active {
+  visibility: visible !important;
+  background-color: white;
+}
+body #container main #main-container #container-comments {
+  margin: 0 5vw;
+}
+body #container main #main-container #container-comments .comment {
+  background-color: #fff;
+  margin: 5vh 0;
+}
+body #container main #main-container #container-comments .comment div {
+  display: flex;
+  padding-bottom: 1vh;
+}
+body #container main #main-container #container-comments .comment div div {
+  flex-direction: column;
+}
+body #container main #main-container #container-comments .comment .comment-image {
+  width: 300px;
+}/*# sourceMappingURL=view.css.map */
+
+button[data-push="true"] {
+  background-color: #c0c0c0;
+}

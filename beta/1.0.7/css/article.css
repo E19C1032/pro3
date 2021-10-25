@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrapper #fixed-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #204969;
+}
+#wrapper #fixed-area header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+#wrapper #fixed-area header a {
+  height: 15vh;
+  color: #fff;
+  text-decoration: none;
+}
+#wrapper #fixed-area header a h1 {
+  padding: 3vh 0;
+}
+#wrapper #fixed-area header div {
+  height: 85vh;
+}
+#wrapper #fixed-area header div ul {
+  list-style-type: none;
+}
+#wrapper #fixed-area header div ul a {
+  text-decoration: none;
+}
+#wrapper #fixed-area header div ul a li {
+  padding: 3vh 0;
+}
+#wrapper #container {
+  width: 80%;
+  background-color: #fff7f7;
+  display: flex;
+  flex-flow: column;
+}
+#wrapper #container main {
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+#wrapper #container main #articles-container .article-container {
+  padding: 5vh 0;
+}
+#wrapper #container main #articles-container .article-container a img {
+  width: 300px;
+}
+#wrapper #container main #main-container #map {
+  background-color: #fff;
+}
+#wrapper #container main #main-container #cotainer-latest-articles {
+  background-color: #fff;
+  margin-top: 5vh;
+}
+#wrapper #container main #main-container #cotainer-latest-articles .articles {
+  display: flex;
+  justify-content: space-around;
+}
+#wrapper #container main #main-container #cotainer-favorite-articles {
+  background-color: #fff;
+  margin-top: 5vh;
+}
+#wrapper #container main #main-container #cotainer-favorite-articles .articles {
+  display: flex;
+  justify-content: space-around;
+}
+#wrapper #container main #main-container .test-space {
+  height: 100vh;
+}
+#wrapper #container footer {
+  background-color: #fff;
+  bottom: 0;
+  width: 80vw;
+  height: 25vh;
+  margin-top: 10vh;
+}
+
+.more {
+  display: block;
+}/*# sourceMappingURL=article.css.map */
+
+button[data-push="true"] {
+  background-color: #c0c0c0;
+}
