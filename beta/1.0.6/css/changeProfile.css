@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  background-color: #fff7f7;
+}
+#container header {
+  padding: 3vh 5vw;
+  background-color: #204969;
+}
+#container header a {
+  color: #fff;
+  text-decoration: none;
+}
+#container main {
+  display: flex;
+  justify-content: center;
+  padding-top: 5vh;
+}
+#container main div {
+  display: flex;
+  flex-flow: column;
+  margin-right: 5vw;
+}
+#container main form {
+  display: flex;
+  flex-flow: column;
+  align-items: baseline;
+  background-color: #ffffff;
+}
+#container main form div {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=changeProfile.css.map */
+
+#upload-icon {
+  display: none;
+}

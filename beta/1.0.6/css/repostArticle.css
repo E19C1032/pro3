@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  height: 100vh;
+  position: relative;
+  background-color: #fff7f7;
+}
+#container header {
+  background-color: #204969;
+  padding: 3vh 5vw;
+}
+#container header a {
+  color: white;
+  text-decoration: none;
+}
+#container main div {
+  text-align: center;
+  margin-bottom: 5vh;
+}
+#container main div span {
+  border: solid;
+}
+#container main #draft-container {
+  visibility: hidden;
+  background-color: white;
+}
+#container main .active {
+  visibility: visible !important;
+  background-color: white;
+}
+#container main form {
+  background-color: #fff7f7;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+#container main form table {
+  background-color: #fff7f7;
+}
+#container main form table tr td img {
+  width: 300px;
+}
+#container main form div {
+  text-align: center;
+}/*# sourceMappingURL=repostArticle.css.map */

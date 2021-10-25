@@ -1,0 +1,37 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #container {
+        height: 100vh;
+        background-color: #fff7f7;
+        header {
+            padding: 3vh 5vw;
+            background-color: #204969;
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            padding-top: 5vh;
+            div {
+                display: flex;
+                flex-flow: column;
+                margin-right: 5vw;
+            }
+            form {
+                display: flex;
+                flex-flow: column;
+                align-items: baseline;
+                background-color: #ffffff;
+                div {
+                    display: flex;
+                    flex-direction: row
+                }
+            }
+        }
+    }

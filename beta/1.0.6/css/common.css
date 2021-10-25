@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+#wrapper #fixed-area {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 20%;
+  height: 100vh;
+  background-color: #DBD0C0;
+}
+#wrapper #fixed-area header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-decoration: none;
+}
+#wrapper #fixed-area header a {
+  height: 15vh;
+}
+#wrapper #fixed-area header a h1 {
+  padding: 3vh 0;
+}
+#wrapper #fixed-area header div {
+  height: 85vh;
+}
+#wrapper #fixed-area header div ul {
+  list-style-type: none;
+}
+#wrapper #fixed-area header div ul a {
+  text-decoration: none;
+}
+#wrapper #fixed-area header div ul a li {
+  padding: 3vh 0;
+}
+#wrapper #container {
+  width: 80%;
+  background-color: #FAEEE0;
+  display: flex;
+  flex-flow: column;
+}
+#wrapper #container main {
+  padding-top: 5vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+#wrapper #container main #main-container #map {
+  background-color: azure;
+}
+#wrapper #container main #main-container #cotainer-latest-articles {
+  background-color: azure;
+  margin-top: 5vh;
+}
+#wrapper #container main #main-container .test-space {
+  height: 100vh;
+}
+#wrapper #container footer {
+  background-color: #5E454B;
+  bottom: 0;
+  width: 80vw;
+  height: 25vh;
+  margin-top: 10vh;
+}/*# sourceMappingURL=common.css.map */
