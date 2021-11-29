@@ -1,0 +1,29 @@
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1000px;
+}
+
+#wrapper #fixed-area {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 20%;
+    height: 100vh;
+}
+
+#wrapper #container {
+    width: 80%;
+    display: flex;
+    flex-flow: column;
+}
+
+#wrapper #container main {
+    padding: 5vh 5vw 10vh;
+    background-color: #fff7f7;
+    min-height: 100vh;
+}
+
+
+/*# sourceMappingURL=common.css.map */

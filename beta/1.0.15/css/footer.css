@@ -1,0 +1,30 @@
+footer {
+  background-color: dimgray;
+  bottom: 0;
+  height: 40vh;
+  padding: 5vh 5vw 0;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+footer #footer-top {
+  width: 70vw;
+  height: 35vh;
+  display: flex;
+}
+footer #footer-top div {
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer #footer-top div h3 {
+  font-size: 5em;
+}
+footer #footer-bottom {
+  width: 70vw;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=footer.css.map */

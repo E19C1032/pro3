@@ -1,0 +1,52 @@
+header {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #2c4558;
+    a {
+        height: 15vh;
+        color: #fff;
+        text-decoration: none;
+        h1 {
+            padding: 3vh 0;
+        }
+    }
+    div {
+        height: 85vh;
+        ul {
+            list-style-type: none;
+            a {
+                text-decoration: none;
+                li {
+                    padding: 3vh 0;
+                    text-align: center;
+                }
+            }
+            a[href="logout.php"] {
+                text-decoration: none;
+                li {
+                    padding: 1vh 0;
+                    margin: 2vh 0;
+                    background-color: #fff7f7;
+                    color: #2c4558;
+                    border-radius: 30px;
+                    text-align: center;
+                }
+            }
+            a[href="login.php"] {
+                text-decoration: none;
+                li {
+                    padding: 1vh 0;
+                    margin: 2vh 0;
+                    background-color: #fff7f7;
+                    color: #2c4558;
+                    border-radius: 30px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
