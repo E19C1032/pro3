@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: #ffffff;
+  border-right: solid 3px #000000;
+  min-width: 190px;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  margin: 5vh 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+header .button input {
+  display: none;
+}
+header .button input:checked + label {
+  border: solid 3px black;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #868686;
+  color: white;
+  font-weight: bold;
+}
+header .button label {
+  border: solid 3px;
+  border-radius: 30px;
+  text-align: center;
+  width: 100px;
+  margin: 10px 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+}
+header .button div #tab {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header .button div #tab li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: solid 3px;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+}
+header .button div #tab .active {
+  background-color: #868686;
+  color: white;
+  border-radius: 50%;
+  border: solid 3px black;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+}
+header div ul {
+  margin-top: 50px;
+  list-style-type: none;
+}
+header div ul a {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+}
+header div ul a li {
+  font-weight: 520;
+  padding: 2vh 0;
+  font-size: 22px;
+  text-align: center;
+}
+header div:last-child {
+  margin-top: auto;
+}
+header div:last-child a {
+  text-decoration: none;
+  border: solid 1px;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: black;
+  font-weight: bold;
+  border: solid 3px black;
+  background-color: white;
+}/*# sourceMappingURL=header.css.map */

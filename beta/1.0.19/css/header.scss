@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+header {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+    border-right: solid 3px #000000;
+    min-width: 190px;
+    a {
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        margin: 5vh 0;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+    }
+    .button {
+        input {
+            display: none;
+        }
+        input:checked+label {
+            border: solid 3px black;
+            border-radius: 30px;
+            text-align: center;
+            background-color: rgb(134, 134, 134);
+            color: white;
+            font-weight: bold;
+        }
+        label {
+            border: solid 3px;
+            border-radius: 30px;
+            text-align: center;
+            width: 100px;
+            margin: 10px 0;
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            font-weight: bold;
+        }
+        div {
+            #tab {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                li {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 50%;
+                    border: solid 3px;
+                    height: 40px;
+                    width: 40px;
+                    font-weight: bold;
+                }
+                .active {
+                    background-color: rgb(134, 134, 134);
+                    color: white;
+                    border-radius: 50%;
+                    border: solid 3px black;
+                }
+            }
+        }
+    }
+    div {
+        display: flex;
+        flex-direction: column;
+        ul {
+            margin-top: 50px;
+            list-style-type: none;
+            a {
+                display: flex;
+                text-decoration: none;
+                margin: 0;
+                li {
+                    font-weight: 520;
+                    padding: 2vh 0;
+                    font-size: 22px;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    div:last-child {
+        margin-top: auto;
+        a {
+            text-decoration: none;
+            border: solid 1px;
+            border-radius: 30px;
+            padding: 5px 15px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            border: solid 3px black;
+            background-color: rgb(255, 255, 255);
+        }
+    }
+}
