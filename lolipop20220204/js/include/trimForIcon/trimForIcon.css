@@ -1,0 +1,184 @@
+/* ======================================================================   */
+/* File Name       : trimForIcon.css                                        */
+/* Encoding        : UTF-8                                                  */
+/* Creation Date   : 2021/12/21                                             */
+/* Version         : 1.2                                                    */
+
+/* Copyright © 2021 manju All rights reserved.                              */
+
+/* This source code or any portion thereof must not be                      */
+/* reproduced or used in any manner whatsoever.                             */
+/* ======================================================================   */
+
+
+
+
+
+#container-trim-for-icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 999;
+}
+#container-trim-for-icon.active {
+    display: flex;
+}
+#container-trim-for-icon:not(.active) {
+    display: none;
+}
+#child-container-trim-for-icon {
+    box-sizing: border-box;
+    width: 640px;
+    height: 480px;
+    min-width: 480px;
+    min-height: 320px;
+    border-radius: 5px;
+    background-color: #ccc;
+    overflow: hidden;
+}
+#header-trim-for-icon {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d6e4ff;
+}
+#main-trim-for-icon {
+    position: relative;
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+    cursor: grab;
+}
+#footer-trim-for-icon {
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: #d6e4ff;
+}
+#button-trim-trim-for-icon {
+    display: flex;
+    width: 80px;
+    height: 36px;
+    margin-left: 7px;
+    border-radius: 5px;
+    background-color: #9cbeff;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all .25s;
+}
+#button-trim-trim-for-icon:hover {
+    background-color: #8babe8;
+}
+#button-trim-text-trim-for-icon {
+    color: #333;
+    font-family: "ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";
+    font-weight: bold;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#parent-button-close-trim-for-icon {
+    display: flex;
+    width: 50px;
+    justify-content: center;
+    align-items: center;
+}
+#button-close-trim-for-icon {
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#overlay-trim-for-icon {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+    z-index: 9999;
+}
+#parent-edge-trim-for-icon {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+#square-edge-trim-for-icon {
+    width: 320px;
+    height: 320px;
+    border: 4px #333 dashed;
+    pointer-events: none;
+    z-index: 9999; 
+}
+#square-edge-trim-for-icon.square {
+    border-radius: 0;
+}
+#square-edge-trim-for-icon.circle {
+    border-radius: 50%;
+}
+#canvas-trim-for-icon {
+    position: relative;
+}
+#image-zoom-out-trim-for-icon {
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#image-zoom-in-trim-for-icon {
+    cursor: pointer;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#input-range-magn-trim-for-icon {
+    margin: 0 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    height: 5px;
+    border-radius: 6px;
+}
+#input-range-magn-trim-for-icon:focus, #input-range-magn-trim-for-icon:active {
+    outline: none;
+}
+#input-range-magn-trim-for-icon::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    position: relative;
+    border: 3px solid #7e9bcf;
+    width: 18px;
+    height: 18px;
+    display: block;
+    background-color: #9cbeff;
+    border-radius: 50%;
+}
+#input-range-magn-trim-for-icon:active::-webkit-slider-thumb {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6);
+    transition: .4s;
+}
+#canvas-result-trim-for-icon {
+    display: none;
+}
