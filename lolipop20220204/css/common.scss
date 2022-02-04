@@ -1,0 +1,299 @@
+//全体エリア
+#wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 1050px;
+    //左固定エリア
+    #fixed-area {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        width: 20%;
+        height: 100vh;
+    }
+    //右エリア
+    #container {
+        width: 80%;
+        display: flex;
+        flex-flow: column;
+        #map {
+            height: 500px;
+            width: 1000px;
+            border-radius: 15px;
+            margin-top: 80px;
+        }
+        main {
+            display: block;
+            min-height: 100vh;
+            font-family: "M PLUS Rounded 1c", sans-serif;
+            background-color: #fffef8;
+        }
+    }
+}
+
+//ポップアップ　アラート
+//index.php用アラート
+.popup-index {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    .content {
+        // display: flex;
+        // flex-direction: column;
+        width: 800px;
+        height: 550px;
+        z-index: 9999;
+        background-color: #ffab53;
+        opacity: 1;
+        border-radius: 5px;
+        border: solid 3px black;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        h2 {
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-image {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            justify-content: space-evenly
+        }
+        p {
+            width: 600px;
+            height: 150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .content-button {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            align-items: flex-start;
+            button {
+                border-radius: 5px;
+                font-size: 30px;
+                border: solid 3px black;
+                background-color: rgb(255, 255, 255);
+                padding: 5px 30px;
+            }
+        }
+    }
+}
+
+//changeProfile.php用アラート
+.popup-changeProfile {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    .content {
+        // display: flex;
+        // flex-direction: column;
+        width: 800px;
+        height: 500px;
+        z-index: 9999;
+        background-color: #ffffff;
+        opacity: 1;
+        border-radius: 5px;
+        border: solid 3px black;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        h2 {
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-image {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            justify-content: space-evenly;
+            margin: 50px 0;
+        }
+        p {
+            width: 600px;
+            height: 150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .content-button {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            align-items: center;
+            button {
+                border-radius: 5px;
+                font-size: 30px;
+                border: solid 3px black;
+                background-color: rgb(224, 224, 224);
+                padding: 5px 30px;
+            }
+        }
+    }
+}
+
+//changeEmailAddress.php用アラート
+.popup-changeEmailAddress {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    .content {
+        // display: flex;
+        // flex-direction: column;
+        width: 800px;
+        height: 500px;
+        z-index: 9999;
+        background-color: #ffffff;
+        opacity: 1;
+        border-radius: 5px;
+        border: solid 3px black;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        h2 {
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-image {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            justify-content: space-evenly;
+            margin: 50px 0;
+        }
+        p {
+            width: 600px;
+            height: 150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .content-button {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            align-items: center;
+            button {
+                border-radius: 5px;
+                font-size: 30px;
+                border: solid 3px black;
+                background-color: rgb(224, 224, 224);
+                padding: 5px 30px;
+            }
+        }
+    }
+}
+
+//changePassword.php用アラート
+.popup-changePassword {
+    display: none;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9998;
+    .content {
+        // display: flex;
+        // flex-direction: column;
+        width: 800px;
+        height: 500px;
+        z-index: 9999;
+        background-color: #ffffff;
+        opacity: 1;
+        border-radius: 5px;
+        border: solid 3px black;
+        font-family: "M PLUS Rounded 1c", sans-serif;
+        h2 {
+            display: flex;
+            height: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+        .content-image {
+            display: flex;
+            flex-direction: row;
+            height: 200px;
+            justify-content: space-evenly;
+            margin: 50px 0;
+        }
+        p {
+            width: 600px;
+            height: 150px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+        .content-button {
+            display: flex;
+            justify-content: center;
+            height: 100px;
+            align-items: center;
+            button {
+                border-radius: 5px;
+                font-size: 30px;
+                border: solid 3px black;
+                background-color: rgb(224, 224, 224);
+                padding: 5px 30px;
+            }
+        }
+    }
+}
+
+.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-trim-for-icon {
+    #child-container-trim-for-icon {
+        #header-trim-for-icon {
+            background-color: #fffef8;
+            border-bottom: 1px solid #edece6;
+            #button-trim-trim-for-icon {
+                background-color: white;
+                border: 1px solid #edece6;
+                transition: 0.2s;
+            }
+            #button-trim-trim-for-icon:hover {
+                background-color: #fff9f9;
+            }
+        }
+        #footer-trim-for-icon {
+            background-color: #fffef8;
+            border-top: 1px solid #edece6;
+            #input-range-magn-trim-for-icon {
+                border: 1px solid #edece6;
+            }
+        }
+    }
+}

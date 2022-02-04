@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
+header {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  background-color: #fffef8;
+  min-width: 190px;
+  border-right: 2px solid #edece6;
+}
+header a {
+  color: black;
+  text-decoration: none;
+  margin: 5vh 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+}
+header a img {
+  height: 150px;
+}
+header .button input {
+  display: none;
+}
+header .button input:checked + label {
+  border: 1px solid #ffd54d;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #ffd54d;
+  color: white;
+  font-weight: bold;
+}
+header .button label {
+  border: 1px solid #edece6;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #fff;
+  width: 100px;
+  margin: 10px 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: bold;
+  transition: 0.1s;
+}
+header .button label:hover {
+  background-color: #fff9f9;
+}
+header .button div #tab {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+header .button div #tab li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #edece6;
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+  transition: 0.1s;
+}
+header .button div #tab li:hover {
+  background-color: #fff9f9;
+}
+header .button div #tab .active {
+  background-color: #ffd54d;
+  color: white;
+  border-radius: 50%;
+  border: 1px solid #ffd54d;
+}
+header .button div #tab .active:hover {
+  background-color: #ffd54d;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+}
+header div ul {
+  list-style-type: none;
+}
+header div ul a {
+  display: flex;
+  text-decoration: none;
+  margin: 0;
+}
+header div ul a li {
+  font-weight: 500;
+  margin: 15px 0;
+  font-size: 21px;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: #000000;
+  transition: 0.2s;
+}
+header div ul a li:hover {
+  color: #797979;
+}
+header div:last-child {
+  margin-top: auto;
+}
+header div:last-child a {
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 5px 15px;
+  color: white;
+  font-weight: bold;
+  background-color: #ffd54d;
+  transition: 0.2s;
+}
+header div:last-child a:hover {
+  background-color: #ffd034;
+}/*# sourceMappingURL=header.css.map */
